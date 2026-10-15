@@ -1,44 +1,64 @@
-# 🌐 Dhiraj Jadhavrao Portfolio Platform
+# 🌐 Dhiraj Jadhavrao — Developer Portfolio
 
-Monorepo root containing separate Git repositories for the standalone Frontend UI and Backend Service.
+A responsive developer portfolio built with React 19, TypeScript, Vite, and Tailwind CSS.
 
----
-
-## 📁 Repository Structure
-
-```
-porfolio/
-├── portfolio-ui/        # [Git Repo 1] Standalone React 19 + TypeScript + Vite + Tailwind CSS
-└── portfolio-backend/   # [Git Repo 2] Spring Boot 3.3.5 / Java 21 REST API Backend
-```
+🔗 **Live Portfolio UI**: [https://github.com/dhirajjadhavrao/portfolio-ui](https://github.com/dhirajjadhavrao/portfolio-ui)
 
 ---
 
-## 🚀 Running the Standalone UI (Frontend Clone)
+## ⚡ Tech Stack
 
-The UI runs completely standalone with full dark/light theme switching, interactive code card, all portfolio sections, and local PDF resume downloads.
+- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite 8](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Linter**: [Oxlint](https://oxc.rs/)
+
+---
+
+## 🚀 Features
+
+- **Hero & Interactive Java Code Card**: Animated terminal/code card showcasing Java 21, Spring Boot microservices, and system metrics.
+- **Theme Switching**: Dark / Light mode toggle with persistent state.
+- **Work & Featured Projects**: Enterprise client projects matching high-concurrency architectures (BookaGroup for Lufthansa, Jocata BOBFL for Bank of Baroda, Rakuten Privacy, Catalog, and Price Navi).
+- **Things I've Built**: Open-source tools and platforms (RMC Cloud Platform, BhoomiSetu, GCP Migration Suite, wellfrog-os, habit-analytics-engine).
+- **Experience Timeline**: Engineering career milestones and enterprise leadership at Nagarro, Josh Software, and ThinkQuotient.
+- **Engineering Notes**: Original published technical blogs covering Mockito, C++ foundations, and Linux system administration.
+- **Local PDF Resume**: Direct resume download bundled in `public/`.
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn / pnpm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone git@github.com:dhirajjadhavrao/portfolio-ui.git
+
+# Navigate to project directory
 cd portfolio-ui
+
+# Install dependencies
+npm install
+```
+
+### Development Server
+
+```bash
 npm run dev
 ```
 
-Visit the local development server at `http://localhost:5173`.
+The application will be accessible at `http://localhost:5173`.
 
 ### Production Build
+
 ```bash
-cd portfolio-ui
 npm run build
 npm run preview
-```
-
----
-
-## ☕ Backend Architecture (Planned & Initialized)
-
-The backend is initialized as an enterprise Spring Boot 3 / Java 21 service ready for contact messaging, dynamic profile configuration, and analytics endpoints.
-
-```bash
-cd portfolio-backend
-mvn spring-boot:run
 ```
